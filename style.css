@@ -1,0 +1,32 @@
+html {
+    transition: background 0.2s ease-in-out;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    margin: 50px;
+}
+
+.chapters a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+}
+
+.chapters a::before {
+    content: '➜';
+    position: absolute;
+    left: 0;
+    transition: left 0.2s ease-in-out;
+}
+
+.chapters a:hover::before {
+    left: 10px;
+}
