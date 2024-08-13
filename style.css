@@ -12,21 +12,50 @@ body {
     margin: 50px;
 }
 
-.chapters a {
-    display: block;
-    position: relative;
+a {
     text-decoration: none;
-    color: white;
-    padding-left: 30px;
 }
 
-.chapters a::before {
-    content: '➜';
-    position: absolute;
-    left: 0;
-    transition: left 0.2s ease-in-out;
+/** Widget **/
+.container {
+    height: 300px;
+    overflow-y: auto;
+    padding: 20px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-.chapters a:hover::before {
-    left: 10px;
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.chapters {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.widget {
+    margin: 10px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    /* adjust the width to fit your content */
+}
+
+.widget img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.widget p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
 }
