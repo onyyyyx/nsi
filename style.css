@@ -85,9 +85,9 @@ li:last-child {
     border-bottom: none;
 }
 
-a.home {
+.home {
     display: block;
-    margin: 0 auto 20px;
+    margin:  auto 20px;
     text-align: center;
     padding-bottom: 20px;
 }
