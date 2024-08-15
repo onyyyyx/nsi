@@ -58,6 +58,7 @@ a {
 section {
     background-color: #0c0c0c;
     padding: 20px;
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
     border: 1px solid #222;
     border-radius: 10px;
@@ -93,11 +94,35 @@ a.home {
 footer {
     background-color: #0c0c0c;
     padding: .5rem;
-    text-align: end;
+    text-align: center;
     font-size: 10px;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     box-sizing: border-box;
+}
+
+footer a {
+    color: whitesmoke;
+}
+
+footer a::before {
+    content: "[";
+    padding-right: 5px;
+    transition: 0.2s;
+}
+
+footer a::after {
+    content: ']';
+    padding-left: 5px;
+    transition: 0.2s;
+}
+
+footer a:hover::before {
+    padding-right: 2px;
+}
+
+footer a:hover::after {
+    padding-left: 2px;
 }
