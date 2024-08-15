@@ -10,7 +10,7 @@ body {
     color: whitesmoke;
     background-color: #222;
     font-family: 'Montserrat', sans-serif;
-    margin: 50px;
+    margin: 2%;
 }
 
 a {
@@ -125,4 +125,14 @@ footer a:hover::before {
 
 footer a:hover::after {
     padding-left: 2px;
+}
+
+.hstack {
+    text-align: center;
+    width: 100%;
+}
+.hstack img {
+    max-width: 50%;
+    transition: 0.2s;
+    position: relative;
 }
