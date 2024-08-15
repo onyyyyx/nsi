@@ -8,6 +8,7 @@ html {
 
 body {
     color: whitesmoke;
+    background-color: #222;
     font-family: 'Montserrat', sans-serif;
     margin: 50px;
 }
@@ -32,6 +33,11 @@ a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 150px;
     display: block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.widget:hover {
+    transform: scale(1.1);
 }
 
 .widget img {
@@ -46,4 +52,52 @@ a {
     font-size: 18px;
     font-weight: bold;
     color: #fff;
+}
+
+/* Content */
+section {
+    background-color: #0c0c0c;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #222;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 15px 15px 10px 10px;
+    border-bottom: 1px solid #222;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+a.home {
+    display: block;
+    margin: 0 auto 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color: #0c0c0c;
+    padding: .5rem;
+    text-align: end;
+    font-size: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
