@@ -137,3 +137,23 @@ footer a:hover::after {
     transition: 0.2s;
     position: relative;
 }
+
+code {
+    display: block;
+    margin: 1em 0;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #333;
+    color: #aaffaa;
+    line-height: 1.5rem;
+}
+
+#code {
+    background-color: #333;
+    padding: 5px;
+    border-radius: 5px;
+    color: #aaffaa;
+    margin-top: 0;
+
+}

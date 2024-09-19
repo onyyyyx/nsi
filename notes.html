@@ -17,56 +17,65 @@
     </header>
     <main>
         <section>
-        <h2>String</h2>
-          L’addition de chaînes de caractères se nomme concaténation.<br>
-          On peut aussi utiliser 'fstring' :
-        <code>print(f"Le numéro gagnant est {numéro}")</code>
+            <h2>Chaînes de caractères</h2>
+            <p>L'addition de chaînes de caractères se nomme concaténation.</p>
+            On peut aussi utiliser 'fstring' :
+            <code>print(f"Le numéro gagnant est {numéro}")</code>
+            </p>
+            <h2>Propriétés</h2>
+            <p>Une fois créée, une chaîne de caractères ne peut être modifiée, elles sont non mutables.</p>
+            <p>La longueur d'une chaîne de caractère est le nombre de caractères qu'elle contient.</p>
+            L'instruction pour avoir accès à la longueur d'une chaîne est : <span id="code">len(ma_chaine)</span>
+            <code>
+                ma_chaine = "Hello world"
+                print(len(ma_chaine)) # affiche 11
+            </code>
+                Chaque caractère d'une chaine peut être atteint par son indice dans la chaine.
+            <code>
+                ma_chaine = "Hello world"
+                print(machaine[0]) # affiche le H
+                print(machaine[4]) # affiche le o
+                print(machaine[5]) # affiche le caractère espace
+                print(machaine[10]) # affiche le d
+            </code>
+            Les chaînes de caractères sont itérables. = on peut parcourir la chaine avec une boucle .
         </section>
- 
+
         <section>
-         sqrt = racine carrée<br><br>
-cos = cosinus 
+            <h2>Maths</h2>
+            <span id="code">sqrt</span> = racine carrée<br><br>
+            <span id="code">cos</span> = cosinus
         </section>
- 
 
- 
-Cette documentation doit contenir :
-•	Une phrase qui indique à quoi sert votre fonction.
-•	D'autres phrases s'il existe des contraintes sur les paramètres en entrée (comme strictement positifs, ...).
-•	Les types des arguments d'entrée.
-•	La description du (ou des) argument(s) éventuel(s) de sortie ainsi que son (leur) type(s).
- 
-i = i +1           i+=1
-Propriétés :
-•	Une fois créée, une chaîne de caractères ne peut être modifiée, elles sont non mutables.
-•	La longueur d'une chaîne de caractère est le nombre de caractères qu'elle contient.
- L'instruction pour avoir accès à la longueur d'une chaîne est : len(ma_chaine)
-ma_chaine = "Hello world"
-print(len(ma_chaine)) # affiche 11
-•	Chaque caractère d'une chaine peut être atteint par son indice dans la chaine.
-·	ma_chaine = "Hello world"
-·	print(machaine[0]) # affiche le H
-·	print(machaine[4]) # affiche le o
-·	print(machaine[5]) # affiche le caractère espace
-print(machaine[10]) # affiche le d
-•	Les chaînes de caractères sont itérables. = on peut parcourir la chaine avec une boucle .
- 
- 
- 
- 
-www.w3schools.com
- 
- 
- 
- 
- 
-Afin de "manipuler" ces destinations, nous allons les stocker dans une séquence appelée ici un tuple. 
-En Python, une séquence est une collection ordonnée d'objets qui permet d'accéder à ses éléments par leur numéro (index) de position dans la séquence.
+        <section>
+            <h2>Documentation</h2>
+            La documentation doit contenir :
+            <li>Une phrase qui indique à quoi sert votre fonction.</li>
+            <li>D'autres phrases s'il existe des contraintes sur les paramètres en entrée (comme strictement positifs,
+                ...)</li>
+            <li>Les types des arguments d'entrée.
+            <li>La description du (ou des) argument(s) éventuel(s) de sortie ainsi que son (leur) type(s).</li>
+        </section>
 
-L'opération t.count(x) permet de compter le nombre d'apparition d'un élément x dans le tuple t.
+        <section>
+            <h2>Tuples</h2>
+            <p>Afin de "manipuler" ces destinations, nous allons les stocker dans une séquence appelée ici un tuple.</p>
+            <p>En Python, une séquence est une collection ordonnée d'objets qui permet d'accéder à ses éléments par leur numéro (index) de position dans la séquence.</p>
+            <p>L'opération t.count(x) permet de compter le nombre d'apparition d'un élément x dans le tuple t.</p>
+            <p>On peut mettre "bout à bout" le contenu de 2 tuples. Cette opération s'appelle la concaténation.</p>
+        </section>
 
-
-On peut mettre "bout à bout" le contenu de 2 tuples. Cette opération s'appelle la concaténation.
+        <section>
+            <h2>Tips</h2>
+            <ul>
+                <li><span id="code" >i = i + 1</span><span style="font-size: x-large; margin-left: 20px; margin-right: 20px;">=</span><span id="code">i += 1</span></li>
+            </ul><br><br>
+            <h2>Aide</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com">W3Schools</a> : pas mal de tutos, avec pas mal d'exemples</li>
+                <li><a href="https://stackoverflow.com">StackOverFlow</a> : <i>T'as un problème ? Quelqu'un d'autre l'a eu avant toi</i></li>
+            </ul>
+        </section>
 
         <a href="index.html" class="home" title="Retour">
             <svg fill="#000" height="64px" width="64px" version="1.1" id="Capa_1" viewBox="-48.62 -48.62 583.44 583.44"
