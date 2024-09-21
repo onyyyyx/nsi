@@ -1,17 +1,18 @@
 html {
-    height: 100%;
+    background: linear-gradient(to bottom, #333, #0b0b0b);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
+    width: auto;
     height: 100vh;
+    background-color: #0b0b0b;
 }
 
 body {
     color: whitesmoke;
-    background-color: #222;
     font-family: 'Montserrat', sans-serif;
     margin: 2%;
+    line-height: 1.5rem;
 }
 
 a {
@@ -94,8 +95,30 @@ li:last-child {
     padding-bottom: 20px;
 }
 
+.home svg {
+
+    transition: transform 0.5s ease-in-out;
+}
+
+.home svg:hover {
+    transform: scale(1.2);
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header h1, header a {
+    flex: 1;
+}
+
+header a {
+    text-align: right;
+}
+
 footer {
-    background-color: #0c0c0c;
+    /* background-color: #0c0c0c; */
     padding: .5rem;
     text-align: center;
     font-size: 10px;
@@ -148,7 +171,6 @@ code {
     border-radius: 10px;
     box-shadow: 1px 1px 10px #333;
     color: #aaffaa;
-    line-height: 1.5rem;
 }
 
 #code {
