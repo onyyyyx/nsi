@@ -163,7 +163,7 @@ footer a:hover::after {
     position: relative;
 }
 
-code {
+pre {
     display: block;
     margin: 1em 0;
     background-color: #333;
