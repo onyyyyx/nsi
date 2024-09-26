@@ -21,24 +21,24 @@
             <h2>Chaînes de caractères</h2>
             <p>L'addition de chaînes de caractères se nomme concaténation.</p>
             On peut aussi utiliser 'fstring' :
-            <code>print(f"Le numéro gagnant est {numéro}")</code>
+            <pre>print(f"Le numéro gagnant est {numéro}")</pre>
             </p>
             <h2>Propriétés</h2>
             <p>Une fois créée, une chaîne de caractères ne peut être modifiée, elles sont non mutables.</p>
             <p>La longueur d'une chaîne de caractère est le nombre de caractères qu'elle contient.</p>
             L'instruction pour avoir accès à la longueur d'une chaîne est : <span id="code">len(ma_chaine)</span>
-            <code>
+            <pre>
                 ma_chaine = "Hello world"
                 print(len(ma_chaine)) # affiche 11
-            </code>
+            </pre>
                 Chaque caractère d'une chaine peut être atteint par son indice dans la chaine.
-            <code>
+            <pre>
                 ma_chaine = "Hello world"
                 print(machaine[0]) # affiche le H
                 print(machaine[4]) # affiche le o
                 print(machaine[5]) # affiche le caractère espace
                 print(machaine[10]) # affiche le d
-            </code>
+            </pre>
             Les chaînes de caractères sont itérables. = on peut parcourir la chaine avec une boucle .
         </section>
 
@@ -64,8 +64,68 @@
             <p>En Python, une séquence est une collection ordonnée d'objets qui permet d'accéder à ses éléments par leur numéro (index) de position dans la séquence.</p>
             <p>L'opération t.count(x) permet de compter le nombre d'apparition d'un élément x dans le tuple t.</p>
             <p>On peut mettre "bout à bout" le contenu de 2 tuples. Cette opération s'appelle la concaténation.</p>
+            <p>Un tuple est un objet non modifiable : on ne peut ni modifier ses éléments ni lui en ajouter. On dit que c'est un objet NON mutable. </p>
         </section>
 
+        <section>
+            <p>Les listes en Python sont des objets qui ont leur propre type. Vous connaissez les entiers de type « int », les chaines de caractère de type « str ». Les listes sont de type « list ».</p>
+            <p>En Python une liste, comme un tuple, est une séquence c'est-à-dire une collection ordonnée d'objets qui permet d'accéder à ses éléments par leur index de position dans la séquence.</p>
+            <p>Une liste se déclare par une paire de crochets et ses éléments sont séparés par des virgules. </p>
+            <table>
+                <th>
+                    <td>Fonction</td>
+                    <td>Utilité</td>
+                </th>
+                <tr>
+                    <td><span id="code">L.append(x)</span></td>
+                    <td>Ajoute un élément <i>x</i> à la fin de la liste (L)</td>
+                </tr>
+                <tr>
+                    <td><span id="code">L.index(x)</span></td>
+                    <td>Donne la position <i>x</i> d'un élément de la liste (L)</td>
+                </tr>
+                <tr>
+                    <td><span id="code">L.insert(p, x)</span></td>
+                    <td>Insère un élément (x) à une position spécifiée <i>p</i></td>
+                </tr>
+                <tr>
+                    <td><span id="code">L.remove(x)</span></td>
+                    <td>Supprime l'élément <i>x</i> de la liste (L)</td>
+                </tr>
+                <tr>
+                    <td><span id="code">L.pop(p)</span></td>
+                    <td>Supprime l'élément d'index <i>p</i> et renvoie sa valeur</td>
+                </tr>
+                <tr>
+                    <td><span id="code">L.sort()</span></td>
+                    <td>Trie la liste <i>L</i> selon un ordre donné (précisions <a href="#sort">ici</a></td>
+                </tr>
+                <tr>
+                    <td><span id="code">L.reverse(L)</span></td>
+                    <td>Retourne la liste <i>L</i></td>
+                </tr>
+            </table>
+        </section>
+        
+        <section>
+            <h2>Autres trucs</h2>
+            <ul>
+                <li>
+                    Par défaut, la fonction print() termine l'affichage par un retour à la ligne.<br>L'ajout de <span id="code">end=' '</span> permet de le remplacer par un espace. 
+                </li>
+            </ul>
+        </section>
+
+        <section id="sort">
+            <span id="code">sort</span> permet de trier des listes. Le tri par défaut est en ordre alphabétique.<br>
+            Pour trier dans l'ordre inverse, on utilise le paramètre <span id="code">reverse=True</span>.<br>
+            Pour trier selon un ordre différent, on utilise le paramètre <span id="code">key=func</span>. Il faut créer une fonction comme celle-ci :
+<pre>
+def func(x):
+    return len(x)
+</pre>
+        </section>
+            
         <section>
             <h2>Tips</h2>
             <ul>
