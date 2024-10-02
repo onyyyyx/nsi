@@ -66,6 +66,7 @@ print(machaine[10]) # affiche le d</pre>
         </section>
 
         <section>
+            <h2>Listes</h2>
             <p>Les listes en Python sont des objets qui ont leur propre type. Vous connaissez les entiers de type « int
                 », les chaines de caractère de type « str ». Les listes sont de type « list ».</p>
             <p>En Python une liste, comme un tuple, est une séquence c'est-à-dire une collection ordonnée d'objets qui
@@ -98,7 +99,7 @@ print(machaine[10]) # affiche le d</pre>
                 </tr>
                 <tr>
                     <td><span id="code">L.sort()</span></td>
-                    <td>Trie la liste <i>L</i> selon un ordre donné (précisions <a href="#sort">ici</a></td>
+                    <td>Trie la liste <i>L</i> selon un ordre donné (précisions <a href="#sort">ici</a>)</td>
                 </tr>
                 <tr>
                     <td><span id="code">L.reverse(L)</span></td>
@@ -108,16 +109,45 @@ print(machaine[10]) # affiche le d</pre>
         </section>
 
         <section>
+            <h2>Dictionnaires</h2>
+            <ul>
+                <li>Tout comme les listes et les tuples, les dictionnaires sont des objets structurés pouvant contenir d'autres objets.</li>
+                <li>Les dictionnaires sont délimités par des { } (là où les listes l'étaient par des [ ]). </li>
+                <li>Dans un dictionnaire les informations ne sont pas stockées dans un ordre précis. Aussi, pour accéder aux objets contenus dans le dictionnaire, on utilise plutôt des clés que des indices.</li>
+                <li>Un dictionnaire se présente comme suit : <pre>{cle1 : valeur1 , cle2 : valeur2 , ...}</pre></li>
+                <li>On peut, comme on l'a fait pour les listes, créer un dictionnaire vide (avec {}) et le remplir au fur et à mesure. </li>
+                <li>On peut modifier une valeur correspondant à une clé 
+                    <pre>dictionnaire["un"] = "1" </pre>
+                </li>
+                <li>Pour supprimer un couple clé : valeur : 
+                    <pre>del dictionnaire["un"]</pre>
+                </li>
+                <li>La méthode keys() permet d'accéder aux différentes clés d'un dictionnaire :
+                    <pre>dictionnaire.keys()</pre>
+                </li>
+                <li>La méthode values() donne, elle, accès aux valeurs : 
+                    <pre>dictionnaire.values()</pre>
+                </li>
+                <li>De même, la méthode items() donne accès à tout le contenu du dictionnaire : 
+                    <pre>dictionnaire.items()</pre>
+                </li>
+                <li>On peut vérifier avec le mot-clé in si une valeur (ou une clé) est contenue dans le dictionnaire. Pour cela, tous les éléments du dictionnaire seront parcourus un à un. On obtient le booléen True si la valeur (ou la clé) recherchée est présente, False sinon. (ne pas oublier .values() pour les valeur)</li>
+            </ul>
+        </section>
+
+        <section>
             <h2>Autres trucs</h2>
             <ul>
                 <li>
                     Par défaut, la fonction print() termine l'affichage par un retour à la ligne.<br>L'ajout de <span
                         id="code">end=' '</span> permet de le remplacer par un espace.
                 </li>
+                <li>Pour affciher le typé d'une variable, on utilise <span id="code">print(type(variable))</span></li>
             </ul>
         </section>
 
         <section id="sort">
+            <h2>sort()</h2>
             <span id="code">sort</span> permet de trier des listes. Le tri par défaut est en ordre alphabétique.<br>
             Pour trier dans l'ordre inverse, on utilise le paramètre <span id="code">reverse=True</span>.<br>
             Pour trier selon un ordre différent, on utilise le paramètre <span id="code">key=func</span>. Il faut créer
