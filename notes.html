@@ -134,6 +134,24 @@ print(machaine[10]) # affiche le d</pre>
                 <li>On peut vérifier avec le mot-clé in si une valeur (ou une clé) est contenue dans le dictionnaire. Pour cela, tous les éléments du dictionnaire seront parcourus un à un. On obtient le booléen True si la valeur (ou la clé) recherchée est présente, False sinon. (ne pas oublier .values() pour les valeur)</li>
             </ul>
         </section>
+        
+        <section>
+            <h2>Tableaux</h2>
+            <p>Pour atteindre l'élément d'indice j dans la liste d'indice i (autrement dit, le (j+1)ème élément de la (i+1)ème ligne) :</p>
+            <pre>tableau[i][j]</pre>
+
+            <p>Pour parcourir le "tableau" "case par case" :</p>
+<pre>for ligne in tableau :
+    for element in ligne :
+        instruction</pre>
+            <p>Et avec les indices :</p>
+<pre>n=len(tableau)
+m=len(tableau[0])      # On suppose que les 'lignes' sont toutes de la même longueur
+for i in range(n) :
+    for j in range(m):
+        instruction</pre>
+
+        </section>
 
         <section>
             <h2>Autres trucs</h2>
